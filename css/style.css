@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --mainColor: #1977CC;
+    --bgColor: #F1F7FD;
+    --titleColor: #2C4964;
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 5% 0;
+}
+h2{
+    color: var(--titleColor);
+}
+.line{
+    width: 10%;
+    height: 2px;
+    background: #ddd;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+.line::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+    height: 4px;
+    background: var(--mainColor);
+}
+textarea{
+    resize: none;
+}
+/* ============ start banner ========== */
+header{
+    background-image: url(../img/hero-bg.jpg);
+    height: 75vh;
+    position: 100% 100%;
+    background-attachment: fixed;
+    
+}
+header .banner-title h1{
+    font-size: 4em;
+    color: var(--titleColor);
+}
+.navbar-nav .nav-link.active{
+    color: #fff;
+}
+/* ============ end banner ========== */
+
+
+/* ============ start features ========== */
+#chooseMedilab .features-content button{
+    background-color: #4792D6;
+    transition: all 0.3s ease-in-out;
+}
+#chooseMedilab .features-content button i{
+    font-size: 12px;
+}
+#chooseMedilab .features-content button:hover{
+    background-color: #fff;
+    color: var(--mainColor) !important;
+}
+#chooseMedilab .features-content i{
+    color: var(--mainColor);
+}
+#chooseMedilab .features-content h5{
+    color: #444;
+}
+#chooseMedilab .features-content p{
+    color: rgb(146, 146, 146);
+}
+#chooseMedilab .features{
+    transform: rotatex(75deg) translatey(-200px);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+#chooseMedilab .features:hover{
+    transform: rotatex(0deg);
+}
+
+
+/* ============ end features ========== */
+
+
+/* ============ start about ========== */
+#about .about-img img{
+    height: 45em;
+}
+#about .about-content h2{
+    font-size: 35px;
+}
+#about .about-content p{
+    font-size: 18px;
+}
+#about .about-content .about-item i{
+    color: var(--mainColor);
+    transition: all 0.3s ease-in-out;
+}
+#about .about-content .about-item .about-text h4{
+    color: var(--titleColor);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#about .about-content .about-item:hover i{
+    background-color: var(--mainColor);
+    color: #fff ;
+}
+#about .about-content .about-item:hover h4{
+    color: var(--mainColor);
+}
+/* ============ end about ========== */
+
+
+/* ============ start counter ========== */
+#counter{
+    background-color: var(--bgColor);
+}
+.counter{
+    border-radius: 30px;
+}
+.counter .counter-content i{
+    transform: translate(-50%, -50%);
+    bottom: 85%;
+    left: 50%;
+}
+/* ============ end counter ========== */
+
+
+/* ============ start Services ========== */
+#service .service-title h2{
+    font-size: 3em;
+}
+#service .service-title p{
+    font-size: 1.1em;
+}
+.service .service-content i{
+    background-color: var(--mainColor);
+    color: #fff;
+    box-shadow: -10px -10px #BADAF7;
+}
+.service .service-content{
+    transition: all 0.3s ease-in-out;
+}
+.service .service-content::after{
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: -300px;
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    background-color: var(--mainColor);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+.service .service-content:hover::after{
+    top: 0px;
+    left: 0px;
+    border-radius: 0%;
+}
+.service .service-content:hover{
+    color: #fff;
+}
+.service .service-content:hover h2{
+    color: #fff;
+}
+.service .service-content:hover i{
+    color: var(--mainColor);
+    background-color: #fff;
+}
+/* ============ end Services ========== */
+
+
+/* ============ start appointment ========== */
+#appointment{
+    background-color: var(--bgColor);
+}
+#appointment .appointment-title h2{
+    font-size: 3em;
+}
+#appointment .appointment-title p{
+    font-size: 1.1em;
+}
+@media screen and (max-width:991px) {
+    #appointment button{
+        width: 40% !important;
+    }
+}
+
+/* ============ end appointment ========== */
+
+/* ============ start Department ========== */
+#Department .Department-title h2{
+    font-size: 3em;
+}
+#Department .Department-title p{
+    font-size: 1.1em;
+}
+
+#tabs .tabs-list li{
+    margin-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--titleColor);
+}
+#tabs .tabs-list li:hover:not(.active){
+    color: var(--mainColor);
+}
+#tabs .tabs-list .active{
+    color: #fff;
+    background-color: var(--mainColor);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 8px;
+}
+#tabs .dept .content-list h3{
+    color:var(--titleColor);
+    font-size: 25px;
+}
+#tabs .dept .content-list p{
+    font-size: 18px;
+}
+#tabs .dept .content-list > div:not(:first-child),
+#tabs .dept .content-img > div:not(:first-child){
+    display: none;
+}
+/* ============ end Department ========== */
+
+
+/* ============ start Doctor ========== */
+#doctor .doctor-title h2{
+    font-size: 3em;
+}
+#doctor .doctor-title p{
+    font-size: 1.1em;
+}
+.doctor .doctor-content .doctor-info .personal-info h6::after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    margin: 15px 0;
+    width: 20%;
+    height: 2px;
+    background-color: #A0BCD5;
+}
+.doctor .doctor-content .doctor-info .doctor-contact i{
+    font-size: 22px;
+    background: #A0BCD5;
+    padding: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    text-align: center; 
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.doctor .doctor-content .doctor-info .doctor-contact i:hover{
+    background-color: var(--mainColor);
+}
+@media screen and (max-width:991px) {
+    .doctor .doctor-content .doctor-info .doctor-contact i{
+        font-size: 18px;
+    width: 40px;
+    height: 40px;
+    }
+}
+
+/* ============ end Doctor ========== */
+
+
+/* ============ start blog ========== */
+#blog{
+    background-color: var(--bgColor);
+}
+#blog .blog-title h2{
+    font-size: 3em;
+}
+#blog .blog-title p{
+    font-size: 1.1em;
+}
+.accordion .accordion-item p{
+    font-size: 1.1em;
+}
+/* ============ end blog ========== */
+
+
+/* ============ start testimonial ========== */
+#testimonial .testimonial-content .testimonial-info i{
+    font-size: 1.5em;
+    color: #BADAF7;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--mainColor);
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    background: var(--mainColor);
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: var(--mainColor);
+}
+/* ============ end testimonial ========== */
+
+
+/* ============ start gallery ========== */
+#gallery .gallery-title h2{
+    font-size: 3em;
+}
+#gallery .gallery-title p{
+    font-size: 1.1em;
+}
+
+.gallery-item .gallery-scale img{
+    transition: all 0.3s ease-in-out;
+}
+.gallery-item:hover img{
+    transform: scale(1.1);
+}
+/* ============ end gallery ========== */
+
+
+/* ============ start Contact ========== */
+#contact{
+    background-color: var(--bgColor);
+}
+#contact .contact-title h2{
+    font-size: 3em;
+}
+#contact .contact-title p{
+    font-size: 1.1em;
+}
+
+#contact .contact-info .contact-reache i{
+    font-size: 20px;
+    width: 44px;
+    height: 44px;
+    background-color: #D6E9FA;
+    color: var(--mainColor);
+    transition: all 0.3s ease-in-out;
+}
+#contact .contact-info .contact-reache:hover i{
+    color: #fff;
+    background-color: var(--mainColor);
+}
+/* ============ end Contact ========== */
+
+
+/* ============ start footer ========== */
+#footer .useful-link .links i{
+    color: var(--mainColor);
+    font-size: 14px;
+}
+#footer .useful-link .links i a{
+    color: #8b8b8b;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+#footer .useful-link .links i a:hover{
+    color: var(--mainColor);
+}
+/* ============ end footer ========== */
+
+
+/* ============ start copyright ========== */
+#copyright{
+    background-color: var(--bgColor);
+    padding: 30px;
+}
+#copyright .social-icon i{
+    font-size: 22px;
+    background: var(--mainColor);
+    padding: 10px;
+    width: 42px;
+    height: 42px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#copyright .social-icon i:hover{
+    background-color: #509ada;
+}
+/* ============ end copyright ========== */
+
+
